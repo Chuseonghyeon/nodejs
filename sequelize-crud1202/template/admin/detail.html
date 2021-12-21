@@ -1,0 +1,23 @@
+{% set title = "재품 정보" %}
+{% extends "layout/base.html" %}
+
+{% block content -%}
+
+    <table class="table table-bordered table-hover">
+
+        <tr style="text-align:center">
+
+            <th>{{product.name}}</th>
+
+        </tr>
+
+        <tr>
+
+            <td>가격 : {{price}}</td>
+            <td>설멸 : {{description}}</td>
+
+        </tr>
+
+    </table>
+
+{% endblock %}

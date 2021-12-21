@@ -1,0 +1,21 @@
+{% set title = "제품 정보" %}
+{% extends "layout/base.html" %}
+ 
+{% block content -%}
+
+    <table class="table table-bordered">
+        <tr>
+            <th>제목</th>
+            <th>이름</th>
+            <th>가격</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.description}}</td>
+        </tr>
+    </table>
+
+{% endblock %}

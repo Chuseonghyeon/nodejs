@@ -1,0 +1,20 @@
+{%set title = "음료수 자판기"%}
+{%extends "japangi/vendingMachine.html"%}
+
+{% block content -%} 
+
+    <h2>음료수 자판기</h2>
+    <p>1. 환타 : 100원</p>
+    <p>2. 포카리스웨트 : 200원</p>
+    <p>3. 밀키스 : 300원</p>
+    <p>4. 칠성사이다 : 400원</p>
+    <p>5. 코카콜라: 500원</p>
+
+    <form action="order.html" method="post" id="form">
+
+        <input type="text" name="money" id="money">
+        <input type="submit" value="돈 투입">
+
+    </form>
+
+{% endblock %}

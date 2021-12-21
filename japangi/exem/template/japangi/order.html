@@ -1,0 +1,20 @@
+{%set title = "음료수 목록"%}
+{%extends "japangi/vendingMachine.html"%}
+
+{% block content -%} 
+
+    <p>123123123</p>
+
+    <script>
+
+        document.getElementById("form").onsubmit = function(){
+
+            var money = document.getElementById("money");
+            console.log(money.value);
+            return false;
+
+        }
+
+    </script>
+
+{% endblock %}
